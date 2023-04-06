@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Generator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+      
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="logo">Password Generator</h1>
+    </header>
+	
+	<div class="shape"></div>
+	<div class="shape"></div>
+	<div class="shape"></div>
+
+    <!-- Password Generator Section -->
+    <section class="password-generator">
+      <div class="password-generator-box">
+        <input
+          type="text"
+          id="password"
+          class="password-input"
+          value="Click Generate to get your password"
+          readonly
+        />
+        <div class="password-buttons">
+          <button class="generate-btn btn">Generate</button>
+          <button class="copy-btn btn">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Password Options Section -->
+    <section class="password-options">
+      <h2>Password Options</h2>
+      <form class="password-options-form">
+        <div class="options-label">Password Length:</div>
+        <input
+          type="range"
+          class="options-range"
+          min="8"
+          max="40"
+          step="1"
+          value="16"
+        />
+
+        <div class="options-label">Include:</div>
+        <div class="options-checkboxes">
+          <label class="options-checkbox-label"><input type="checkbox" /> Uppercase Letters</label>
+          <label class="options-checkbox-label"><input type="checkbox" /> Lowercase Letters</label>
+          <label class="options-checkbox-label"><input type="checkbox" /> Numbers</label>
+          <label class="options-checkbox-label"><input type="checkbox" /> Symbols</label>
+        </div>
+      </form>
+    </section>
+	<script src="javascript.js">
+	</script>
+  </body>
+</html>

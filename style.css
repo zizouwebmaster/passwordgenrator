@@ -1,0 +1,318 @@
+body {
+	    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		background: linear-gradient(to right,#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+        background-size: 1500% 100%;
+        animation: bg-animation 60s ease infinite;
+        margin: 0;
+        padding: 0;
+        background-color: #6a0dad;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+	 
+		@keyframes bg-animation {
+      0% { background-position: 0 0; }
+      50% { background-position: 100% 0; }
+      100% { background-position: 0 0; }
+    }
+	/*-----------------------------------------*/
+	{
+      background: linear-gradient(to bottom, #f2f3f4, #ced6e0);
+      animation: bg-animation 20s ease infinite alternate;
+     }
+
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0;
+      animation: shape-animation 5s ease-in-out infinite;
+    }
+
+    .shape:nth-child(1) {
+      width: 10px;
+      height: 10px;
+      top: 20%;
+      left: 15%;
+      background-color: #fff;
+      animation-delay: 0s;
+    }
+
+    .shape:nth-child(2) {
+      width: 20px;
+      height: 20px;
+      top: 55%;
+      left: 70%;
+      background-color: #fff;
+      animation-delay: 2s;
+    }
+
+    .shape:nth-child(3) {
+      width: 30px;
+      height: 30px;
+      top: 80%;
+      left: 40%;
+      background-color: #e74c3c;
+      animation-delay: 4s;
+    }
+
+	.shape:nth-child(4) {
+      width: 10px;
+      height: 10px;
+      top: 10%;
+      left: 60%;
+      background-color: #3498db;
+      animation-delay: 0s;
+    }
+
+    .shape:nth-child(5) {
+      width: 20px;
+      height: 20px;
+      top: 55%;
+      left: 70%;
+      background-color: #e67e22;
+      animation-delay: 2s;
+    }
+
+    .shape:nth-child(6) {
+      width: 30px;
+      height: 30px;
+      top: 80%;
+      left: 40%;
+      background-color: #e74c3c;
+      animation-delay: 4s;
+    }
+
+
+    @keyframes shape-animation {
+      0% { transform: scale(0); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.5; }
+      100% { transform: scale(0); opacity: 1; }
+    }
+
+    @keyframes bg-animation {
+      from { background-position: 0 0; }
+      to { background-position: 100% 100%; }
+    }
+
+	/*-----------------------------------------*/
+      /* Styles for the logo */
+      .logo {
+		background-color: #F8F8F8;
+		color:#272929;
+		width:100%;
+		border-radius:25px;
+        font-size: 40px;
+		font-family: Tahoma, Verdana, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin:auto;
+      }
+
+      /* Styles for the password generator section */
+      .password-generator {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(100vh - 300px);
+        position: relative;
+      }
+
+      /* Styles for the password generator box */
+      .password-generator-box {
+        background-color: #e5e5e5;
+        border-radius: 25px;
+		border:1px solid #e8e8e8;
+        padding: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        text-align: center;
+        max-width: 700px;
+        width: 90%;
+        margin: auto;
+		height:50%;
+      }
+
+      /* Styles for the password input field */
+      .password-input {
+        font-size: 25px;
+        text-align: center;
+        width: 90%;
+		
+        padding: 15px;
+        border: none;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      /* Styles for the password generator buttons */
+      .password-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      /* Common styles for the password generator buttons */
+      .btn {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        font-size: 24px;
+        color: #272929;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 9px #999;
+        padding: 15px 30px;
+      }
+
+      /* Styles for the generate button */
+      .generate-btn {
+        background-color: #dd8403;
+      }
+
+      /* Styles for the generate button on hover */
+      .generate-btn:hover {
+        background-color: #fbb737;
+      }
+
+      /* Styles for the generate button on active */
+      .generate-btn:active {
+        background-color: #dd8403;
+        box-shadow: 0 5px #bfc8cb;
+        transform: translateY(4px);
+      }
+
+      /* Styles for the copy button */
+      .copy-btn {
+        background-color: #6a0dad;
+        color: #fff;
+        margin-left: 20px;
+      }
+
+      /* Styles for the copy button on hover */
+      .copy-btn:hover {
+        background-color: #461d5d;
+      }
+
+      /* Styles for the copy button on active */
+      .copy-btn:active {
+        background-color: #3c1647;
+        box-shadow: 0 5px #2a1032;
+        transform: translateY(4px);
+      }
+     
+      /* Styles for the password options section */
+      .password-options {
+        color: #dd8403;
+        text-align: center;
+        padding: 20px;
+        width: 95%;
+		border:2px solid #999;
+		border-radius:15px;
+		
+      }
+
+      /* Styles for the password options form */
+      .password-options-form {
+        max-width: 600px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      /* Styles for the password options label */
+      .options-label {
+		font-family:Verdana;
+		margin:20px;
+        font-weight: bold;
+        color: #000;
+        font-size: 18px;   }
+
+      /* Styles for the password options checkboxes */
+      .options-checkboxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+		background:800080;
+		border:1px solid gray;
+		border-radius:25px;
+		height:30px;
+		padding:10px;
+		
+		
+      }
+
+      /* Styles for the password options checkbox label */
+      .options-checkbox-label {
+        font-size: 16px;
+        color: #111;
+        margin-right: 20px;
+		font-weight:bold;
+		
+      }
+
+      /* Styles for the password options range input */
+      .options-range {
+        width: 100%;
+        height: 15px;
+        margin-top: 10px;
+        -webkit-appearance: none;
+        background-color: #f5f5f5;
+        outline: none;
+        border-radius: 5px;
+      }
+
+      /* Styles for the password options range input thumb */
+      .options-range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background-color: #6a0dad;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Styles for the password options range input thumb on hover */
+      .options-range:hover::-webkit-slider-thumb {
+        background-color: #461d5d;
+      }
+
+      /* Styles for the password options range input thumb on active */
+      .options-range:active::-webkit-slider-thumb {
+        background-color: #3c1647;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Styles for the password options range input track */
+      .options-range::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 5px;
+        cursor: pointer;
+        background-color: #d1d1d1;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Styles for the password options range input track on hover */
+      .options-range:hover::-webkit-slider-runnable-track {
+        background-color: #b7b7b7;
+      }
+
+      /* Styles for the password options range input track on active */
+      .options-range:active::-webkit-slider-runnable-track {
+        background-color: #999;
+      }
